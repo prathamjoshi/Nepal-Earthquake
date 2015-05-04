@@ -1,0 +1,17 @@
+rect {
+  fill: none;
+  pointer-events: all;
+  z-index: -1;
+}
+
+.nepal_districts {
+  fill: #F8F8F8;
+  stroke: #929292;
+}
+
+.district-boundary {
+  fill: none;
+  stroke: #929292;
+  stroke-linejoin: round;
+}
+
