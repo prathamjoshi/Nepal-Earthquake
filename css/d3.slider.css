@@ -49,6 +49,11 @@
   stroke: #bbb;
 }
 
+#dragger-rect {
+  fill: none;
+  stroke: black;
+}
+
 .dragger rect {
   fill: #71ACE3;
   stroke: none;

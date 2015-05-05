@@ -3,7 +3,7 @@ d3.slider = function module() {
 
   var div, min = 0, max = 100, svg, svgGroup, value, classPrefix, axis, 
   height=40, rect,
-  rectHeight = 12,
+  rectHeight = 1,
   tickSize = 6,
   margin = {top: 25, right: 25, bottom: 15, left: 25}, 
   ticks = 0, tickValues, scale, tickFormat, dragger, width, 
@@ -94,12 +94,20 @@ d3.slider = function module() {
       .attr("class", "draggertext")
       .text(displayValue);
 
+      dragger.append("rect")
+      .attr("id", "dragger-rect")
+      .attr("x", 0)
+      .attr("y", -10)
+      .attr("width", 5)
+      .attr("height", 20);
+/*
       dragger.append("circle")
       .attr("class", "dragger-outer")
       .attr("r", 10)
       .attr("transform", function(d) {
         return "translate(0,6)";
       });
+
       
       dragger.append("circle")
       .attr("class", "dragger-inner")
@@ -107,6 +115,7 @@ d3.slider = function module() {
       .attr("transform", function(d) {
         return "translate(0,6)";
       });
+*/
 
 
       // Enable dragger drag 
