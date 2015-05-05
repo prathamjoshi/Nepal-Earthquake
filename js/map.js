@@ -12,6 +12,7 @@ var path = d3.geo.path()
 var tooltip = d3.select("#container").append("div").attr("class", "tooltip hidden");
 
 var svg = d3.select("body").append("svg")
+    .attr("id", "timeline-map")
     .attr("width", width)
     .attr("height", height);
 
