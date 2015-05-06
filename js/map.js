@@ -68,7 +68,7 @@ d3.json("data/nepal.json", function(error, npl) {
                             .append('xhtml:p')
                             .attr('class', 'popup-text')
                             .attr('style', 'border: 1px solid black; color: black;')
-                            .html('Test')
+                            .html('<b>' + d.properties.name + '</b>')
 
           })
           .on("mouseout", function(d,i) {
