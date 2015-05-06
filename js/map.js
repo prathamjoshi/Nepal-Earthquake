@@ -50,11 +50,46 @@ d3.json("data/nepal.json", function(error, npl) {
           .attr("d", path)
           .on("mouseover", function(d,i) {
               d3.select(this.parentNode.appendChild(this)).transition().duration(300)
-                  .style({'stroke-width':1,'stroke':'#333333','stroke-linejoin':'round','cursor':'pointer','fill':'pink'});  
+                  .style({'stroke-width':1,'stroke':'#333333','stroke-linejoin':'round','cursor':'pointer','fill':'pink'})
+                  pathCenter = getCenter(this);
+                  /*
+                  d3.select(this.parentNode).append("text")
+                            .text("Testing!")
+                            .attr("x", pathCenter[0])
+                            .attr("y", pathCenter[1])
+                  */
+                  d3.select(this.parentNode).append("svg:foreignObject")
+                            .attr('class', 'text-box')
+                            .attr('x', pathCenter[0] + 20)
+                            .attr('y', pathCenter[1] - 20)
+                            .attr('width', 100)
+                            .attr('height', 400)
+                            .attr('min-height', 400)
+                            .append('xhtml:p')
+                            .attr('class', 'popup-text')
+                            .attr('style', 'border: 1px solid black; color: black;')
+                            .html('Test')
+
           })
           .on("mouseout", function(d,i) {
               d3.select(this.parentNode.appendChild(this)).transition().duration(100)
                   .style({'stroke-width':1,'stroke':'#929292','stroke-linejoin':'round','fill':'#F8F8F8'});
+                  d3.select(this.parentNode).selectAll(".text-box").remove();
+          })
+          .on("click", function(d) {
+
+                          
+                
+/*  
+            ("svg:foreignObject")
+                  .style("transform", "translate(0px,-10px)")
+                  .attr('width', 200)
+                  .attr('height', 100)
+                  .append('xhtml:p')
+                  .attr('class', 'popup-text')
+                  .attr('style', 'border-color: black; color: black;')
+                  .html('<b>This is bold text</b>')
+                  */
           });
 
       g.append("path")
@@ -85,3 +120,8 @@ d3.json("data/nepal.json", function(error, npl) {
 
 
 });
+
+function getCenter(node) {
+  bbox = node.getBBox();
+  return [bbox.x + bbox.width/2, bbox.y + bbox.height/2];
+}
