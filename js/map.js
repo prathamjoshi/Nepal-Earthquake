@@ -22,7 +22,7 @@ svg.append("rect")
 
 var g = svg.append("g");
 // Initialize slider
-var slider = d3.slider().min(26).max(32).ticks(10).showRange(false).value(6);
+var slider = d3.slider().min(26).max(32).ticks(5).showRange(false).value(26);
 // Render the slider in the div
 d3.select('#slider1').call(slider);
 
@@ -49,7 +49,7 @@ d3.json("data/nepal.json", function(error, npl) {
           .attr("class", function(d) { return "nepal_districts " + d.id; })
           .attr("d", path)
           .on("mouseover", function(d,i) {
-              d3.select(this.parentNode.appendChild(this)).transition().duration(300)
+              d3.select(this.parentNode.appendChild(this)).transition().duration(100)
                   .style({'stroke-width':1,'stroke':'#333333','stroke-linejoin':'round','cursor':'pointer','fill':'pink'})
                   pathCenter = getCenter(this);
                   /*
