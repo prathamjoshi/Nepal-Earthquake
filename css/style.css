@@ -1,3 +1,8 @@
+h2 {
+  padding-top: 20px;
+  color: teal;  
+}
+
 rect {
   fill: none;
   pointer-events: all;
@@ -43,10 +48,11 @@ rect {
     font-weight: 500;
     color: #333;
     text-align: justify;
+    height: 100px;
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: none;
   padding:0;
     margin:0;
 }
@@ -58,5 +64,5 @@ li {
 
 li:before {
   content: "• ";
-  color: red;
+  color: #2D5781;
 }

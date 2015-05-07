@@ -25,7 +25,19 @@ var g = svg.append("g");
 var slider = d3.slider().min(26).max(32).ticks(5).showRange(false).value(26);
 // Render the slider in the div
 d3.select('#slider1').call(slider);
+var last_slider_value = Math.round(slider.value());
+console.log(last_slider_value);
+var current_slider_value;
 
+
+
+d3.select('#slider1').on("mouseover", function() {
+  current_slider_value = Math.round(slider.value());
+  if (current_slider_value != last_slider_value) {
+    last_slider_value = current_slider_value; 
+    $("#news_top").html("<ul><li>The collapse of 7 storey building in Kapan alone has killed at least 70 (Setopati), 380 bodies in Om hospital. 18 bodies of foreign climbers recovered from Everest. Death toll expected to rise.</li></ul>");
+  }
+});
 
 
 d3.json("data/nepal.json", function(error, npl) {
@@ -78,18 +90,6 @@ d3.json("data/nepal.json", function(error, npl) {
           })
           .on("click", function(d) {
 
-                          
-                
-/*  
-            ("svg:foreignObject")
-                  .style("transform", "translate(0px,-10px)")
-                  .attr('width', 200)
-                  .attr('height', 100)
-                  .append('xhtml:p')
-                  .attr('class', 'popup-text')
-                  .attr('style', 'border-color: black; color: black;')
-                  .html('<b>This is bold text</b>')
-                  */
           });
 
       g.append("path")
@@ -117,7 +117,6 @@ d3.json("data/nepal.json", function(error, npl) {
               //.attr("xlink:href",'https://cdn3.iconfinder.com/data/icons/softwaredemo/PNG/24x24/DrawingPin1_Blue.png')
               .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";});
       });
-
 
 });
 
