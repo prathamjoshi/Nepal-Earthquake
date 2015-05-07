@@ -1,3 +1,18 @@
+var news = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': "data/news.json",
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+})(); 
+
+$("#news_top").html(news[1].news);
 
 // Initialize slider
 var slider = d3.slider().min(1).max(7).ticks(5).showRange(false).value(1);
@@ -9,11 +24,11 @@ console.log(last_slider_value);
 var current_slider_value;
 
 
-
 d3.select('#slider1').on("mouseover", function() {
   current_slider_value = Math.round(slider.value());
   if (current_slider_value != last_slider_value) {
     last_slider_value = current_slider_value; 
-    $("#news_top").html("<ul><li>The collapse of 7 storey building in Kapan alone has killed at least 70 (Setopati), 380 bodies in Om hospital. 18 bodies of foreign climbers recovered from Everest. Death toll expected to rise.</li></ul>");
+    $("#news_top").html(news[current_slider_value].news);
+    //$("#news_top").html("<ul><li>The collapse of 7 storey building in Kapan alone has killed at least 70 (Setopati), 380 bodies in Om hospital. 18 bodies of foreign climbers recovered from Everest. Death toll expected to rise.</li></ul>");
   }
 });
