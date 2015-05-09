@@ -39,20 +39,14 @@ d3.json("data/nepal.json", function(error, npl) {
       .translate(t);
 
       g.selectAll(".nepal_districts")
-          .data(districts.features)
+        .data(districts.features)
         .enter().append("path")
-          .attr("class", function(d) { return "nepal_districts " + d.id; })
-          .attr("d", path)
-          .on("mouseover", function(d,i) {
-              d3.select(this.parentNode.appendChild(this)).transition().duration(100)
+        .attr("class", function(d) { return "nepal_districts " + d.id; })
+        .attr("d", path)
+        .on("mouseover", function(d,i) {
+          d3.select(this.parentNode.appendChild(this)).transition().duration(100)
                   .style({'stroke-width':1,'stroke':'#333333','stroke-linejoin':'round','cursor':'pointer','fill':'pink'})
                   pathCenter = getCenter(this);
-                  /*
-                  d3.select(this.parentNode).append("text")
-                            .text("Testing!")
-                            .attr("x", pathCenter[0])
-                            .attr("y", pathCenter[1])
-                  */
                   d3.select(this.parentNode).append("svg:foreignObject")
                             .attr('class', 'text-box')
                             .attr('x', pathCenter[0] + 20)
@@ -89,15 +83,11 @@ d3.json("data/nepal.json", function(error, npl) {
               svg.selectAll(".mark")
               .data(rows)
               .enter()
-              //.append("image")
-              //.attr('width', 20)
-              //.attr('height', 20)
               .append("circle")
                       .attr('class','mark')
                       .attr("r", 4)
                       .attr("fill", "pink")
                       .attr("stroke", "black")
-              //.attr("xlink:href",'https://cdn3.iconfinder.com/data/icons/softwaredemo/PNG/24x24/DrawingPin1_Blue.png')
               .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";});
       });
 

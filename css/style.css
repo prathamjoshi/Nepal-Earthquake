@@ -49,6 +49,9 @@ rect {
     color: #333;
     text-align: justify;
     height: 100px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -65,4 +68,23 @@ li {
 li:before {
   content: "• ";
   color: #2D5781;
+}
+
+#intro {
+  font-style: italic;
+  text-indent: 30px;
+}
+
+#world-map {
+  width: 750px; 
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#world-map-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
