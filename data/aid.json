@@ -1,7 +1,28 @@
 
 {"USA": {
-		"fillKey" : "MEDIUM",
+		"fillKey" : "MONEY",
 		"monetary": "20",
 		"personnel": "2"
-	}
+	},
+ "IND": {
+ 		"fillKey" : "AID",
+ 		"monetary" : "unspecified amount",
+ 		"personnel" : "300+",
+ 		"other" : "was first country to respond, 3 on-field hospitals"
+ 	},
+ 	"AUS": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "$11 Million",
+ 		"personnel" : "2 Teams"
+ 	},
+ 	"BTN": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "$1 Million",
+ 		"personnel" : "63 personnel",
+ 		"other" : "personal visit from prime minister"
+ 	},
+ 	"DZA": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "70 personnel"
+ 	}
 }

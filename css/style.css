@@ -87,3 +87,8 @@ li:before {
 #world-map-title {
   text-align: center;
 }
+
+.popup-label {
+  height: 15px;
+  width: 20px;
+}

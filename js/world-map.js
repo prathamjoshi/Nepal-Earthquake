@@ -18,9 +18,9 @@ var world_map = new Datamap({
 					element: document.getElementById('world-map'),
 					fills: {
 								defaultFill : 'darkgrey',
-								HIGH: 'red',
-								LOW: 'orange',
-								MEDIUM: 'blue'
+								BOTH :'red',
+								MONEY: 'orange',
+								AID: 'blue'
 					},
 					data: aid,
 					geographyConfig: {
@@ -29,10 +29,10 @@ var world_map = new Datamap({
             			popupTemplate: function(geo, data) {
             				if (data) {
             					var message = "<div class=\"hoverinfo\"><strong>" + geo.properties.name + "</strong><br>";
-		                    	message += "<br> <b>Aid</b>: <br>";
-		                    	message += "<b>Monetary</b>: <i>" + data.monetary + "</i><br>";
-		                    	message += "<b>Personnel</b>: <i>" + data.personnel + "</i><br>";
-		                    	if (data.other) {message+= "<b>Other</b>: <i>" + data.other + "</i><br>"}
+		                    	
+		                    	if (data.monetary) {message += "<img src=\"img/monetary.png\" class=\"popup-label\"/> : <i>" + data.monetary + "</i><br>";}
+		                    	if (data.personnel) {message += "<img src=\"img/personnel.png\" class=\"popup-label\"/>: <i>" + data.personnel + "</i><br>";}
+		                    	if (data.other) {message+= "<b>Other</b>: <i>" + data.other + "</i><br>";}
 		                    	message += "</div>";
 		                    	return [message].join('');
 		                    } else {
