@@ -12,17 +12,76 @@
  	},
  	"AUS": {
  		"fillKey" : "BOTH",
- 		"monetary" : "$11 Million",
+ 		"monetary" : "11 Million",
  		"personnel" : "2 Teams"
  	},
  	"BTN": {
  		"fillKey" : "BOTH",
- 		"monetary" : "$1 Million",
+ 		"monetary" : "1 Million",
  		"personnel" : "63 personnel",
  		"other" : "personal visit from prime minister"
  	},
  	"DZA": {
  		"fillKey" : "AID",
  		"personnel" : "70 personnel"
+ 	},
+ 	"FIN": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "2.25 Million",
+ 		"personnel" : "1 team"
+ 	},
+ 	"CHN": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "9.9 Million",
+ 		"personnel" : "268 personnel"
+ 	},
+ 	"JPN": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "8.4 Million+",
+ 		"personnel" : "70+ personnel"
+ 	},
+ 	"NLD": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "1.4 Million+",
+ 		"personnel" : "62+ personnel",
+ 		"other" : "search and rescue dogs"
+ 	},
+ 	"SWE": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "1.5 Million",
+ 		"personnel" : "60 personnel"
+ 	},
+ 	"MEX": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "rescue team"
+ 	},
+ 	"AUT": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "835,000+",
+ 		"personnel" : "Austrian Redcross team"
+ 	},
+ 	"EST": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "15+ personnel"
+ 	},
+ 	"ITA": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : "334,000+"
+ 	},
+ 	"MCO": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "12+ member rescue team"
+ 	},
+ 	"CHE": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "experts"
+ 	},
+ 	"IRN": {
+ 		"fillKey" : "AID",
+ 		"other" : "36,000kg of relief supply"
+ 	},
+ 	"COL": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "1500+ volunteers"
  	}
 }

@@ -18,9 +18,9 @@ var world_map = new Datamap({
 					element: document.getElementById('world-map'),
 					fills: {
 								defaultFill : 'darkgrey',
-								BOTH :'red',
-								MONEY: 'orange',
-								AID: 'blue'
+								BOTH :'#f79125',
+								MONEY: '#63cc7d',
+								AID: '#e56262'
 					},
 					data: aid,
 					geographyConfig: {
