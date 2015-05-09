@@ -1,3 +1,18 @@
+var aid = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': "data/aid.json",
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+})(); 
+
+console.log(aid);
 
 var world_map = new Datamap({
 					element: document.getElementById('world-map'),
@@ -7,13 +22,7 @@ var world_map = new Datamap({
 								LOW: 'orange',
 								MEDIUM: 'blue'
 					},
-					data: {
-								USA: {
-									fillKey : 'MEDIUM',
-									monetary: 20,
-									personnel: 2
-								}
-					},
+					data: aid,
 					geographyConfig: {
 						highlightOnHover: true,
             			popupOnHover: true,
@@ -23,6 +32,7 @@ var world_map = new Datamap({
 		                    	message += "<br> <b>Aid</b>: <br>";
 		                    	message += "<b>Monetary</b>: <i>" + data.monetary + "</i><br>";
 		                    	message += "<b>Personnel</b>: <i>" + data.personnel + "</i><br>";
+		                    	if (data.other) {message+= "<b>Other</b>: <i>" + data.other + "</i><br>"}
 		                    	message += "</div>";
 		                    	return [message].join('');
 		                    } else {
