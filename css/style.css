@@ -76,6 +76,7 @@ li:before {
 }
 
 #world-map {
+  position:relative;
   width: 750px; 
   height: 450px;
   display: block;
@@ -84,7 +85,5 @@ li:before {
 }
 
 #world-map-title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
