@@ -81,7 +81,9 @@ d3.json("data/nepal.json", function(error, npl) {
       d3.csv("data/aftershocks.csv", function(aftershocks) {
           return {
               long: aftershocks.longitude,
-              lat: aftershocks.latitude
+              lat: aftershocks.latitude,
+              time: aftershocks.time,
+              magnitude: aftershocks.mag
           };
       }, function (rows) {
               svg.selectAll(".mark")
@@ -89,10 +91,39 @@ d3.json("data/nepal.json", function(error, npl) {
               .enter()
               .append("circle")
                       .attr('class','mark')
-                      .attr("r", 4)
+                      .attr("r", function(d) {return d.magnitude*1.2})
                       .attr("fill", "pink")
                       .attr("stroke", "black")
-              .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";});
+              .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";})
+              .append('svg:title')
+                    .text(function(d) {
+                        var tooltip = "Magnitude : " + d.magnitude;
+                        tooltip += "\nTime: " + d.time;
+                        return tooltip; 
+                    })     
+              .on("mouseover", function(d,i) {
+                /*
+                  d3.select(this.parentNode.appendChild(this)).transition().duration(100)
+                          .style({'stroke-width':1,'stroke':'#333333','stroke-linejoin':'round','cursor':'pointer','fill':'pink'})
+                          pathCenter = getCenter(this);
+                          d3.select(this.parentNode).append("svg:foreignObject")
+                                    .attr('class', 'text-box')
+                                    .attr('x', pathCenter[0] + 500)
+                                    .attr('y', pathCenter[1] + 50)
+                                    .attr('width', 100)
+                                    .attr('height', 400)
+                                    .attr('min-height', 400)
+                                    .append('xhtml:p')
+                                    .attr('class', 'popup-text')
+                                    .attr('style', 'border: 1px solid black; color: black;')
+                                    .html('<b>' + d.lat+ '</b>')
+                                    */
+              })
+              .on("mouseout", function(d,i){
+                /*
+                   d3.select(this.parentNode).selectAll(".text-box").remove();
+                   */
+              })  
       });
 
 });
