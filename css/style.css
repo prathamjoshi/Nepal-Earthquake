@@ -128,3 +128,12 @@ li:before {
 #comparison-chart2 {
     display: inline-block;
 }
+
+/*footer stuff*/
+
+#tools_used, #data_sources {
+  font-size: 12px;
+}
+
+
+/*end footer stuff*/

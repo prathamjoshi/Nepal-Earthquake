@@ -44,6 +44,7 @@ d3.json("data/nepal.json", function(error, npl) {
         .attr("class", function(d) { return "nepal_districts " + d.id; })
         .attr("d", path)
         .on("mouseover", function(d,i) {
+          /*
           d3.select(this.parentNode.appendChild(this)).transition().duration(100)
                   .style({'stroke-width':1,'stroke':'#333333','stroke-linejoin':'round','cursor':'pointer','fill':'pink'})
                   pathCenter = getCenter(this);
@@ -58,12 +59,15 @@ d3.json("data/nepal.json", function(error, npl) {
                             .attr('class', 'popup-text')
                             .attr('style', 'border: 1px solid black; color: black;')
                             .html('<b>' + d.properties.name + '</b>')
+                            */
 
           })
           .on("mouseout", function(d,i) {
+            /*
               d3.select(this.parentNode.appendChild(this)).transition().duration(100)
                   .style({'stroke-width':1,'stroke':'#929292','stroke-linejoin':'round','fill':'#F8F8F8'});
                   d3.select(this.parentNode).selectAll(".text-box").remove();
+                  */
           })
           .on("click", function(d) {
 
