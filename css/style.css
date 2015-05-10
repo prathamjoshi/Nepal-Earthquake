@@ -116,3 +116,7 @@ li:before {
   background-color: #f79125;
   color: #f79125;
 }
+
+#comparison-chart {
+  border: 1px solid red;
+}
