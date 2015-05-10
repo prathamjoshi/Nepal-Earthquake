@@ -75,6 +75,10 @@ li:before {
   text-indent: 30px;
 }
 
+#world-map-wrapper {
+  border: 1px solid green;
+}
+
 #world-map {
   position:relative;
   width: 750px; 
@@ -86,6 +90,11 @@ li:before {
 
 #world-map-title, #comparison-title {
   text-align: center;
+}
+
+#world-map-index {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .popup-label {
