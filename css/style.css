@@ -92,3 +92,18 @@ li:before {
   height: 15px;
   width: 20px;
 }
+
+#monetary_index {
+  background-color: #63cc7d;
+  color: #63cc7d;
+}
+
+#personnel_index {
+  background-color: #e56262;
+  color: #e56262;
+}
+
+#both_index {
+  background-color: #f79125;
+  color: #f79125;
+}
