@@ -83,5 +83,156 @@
  	"COL": {
  		"fillKey" : "AID",
  		"personnel" : "1500+ volunteers"
+ 	},
+ 	"GBR": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "23 Million",
+ 		"personnel" : ">60 personnel"
+ 	},
+ 	"BGD": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "34 member team plus 6 military teams",
+ 		"other" : "10 tonnes of relife material"
+ 	},
+ 	"BRN": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "8 member team"
+ 	},
+ 	"HKG": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">6.45 Million"
+ 	},
+ 	"CAN": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">5 Million",
+ 		"other" : "Boeing C-17 plus supplies sent"
+ 	},
+ 	"CAN": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">5 Million",
+ 		"other" : "Boeing C-17 plus supplies sent"
+ 	},
+ 	"RUS": {
+ 		"fillKey" : "AID",
+ 		"personnel" : ">140 rescue workers",
+ 		"other" : "rescue supplies"
+ 	},
+ 	"ESP": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "47 soldiers plus 7 civil guard"
+ 	},
+ 	"ARE": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : ">1.36 Million",
+ 		"personnel" : "88 personnel"
+ 	},
+ 	"DEU": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "52 personnel",
+ 		"other" : "rescue dogs"
+ 	},
+ 	"NOR": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">1.73 Million",
+ 		"other" : "Boeing C-17 plus supplies sent"
+ 	},
+ 	"QAT": {
+ 		"fillKey" : "AID",
+ 		"other" : "two aircrafts with 60 tons of relief material"
+ 	},
+ 	"IDN": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : ">2 Million",
+ 		"personnel" : "66 personnel"
+ 	},
+ 	"TUR": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "96 personnel",
+ 		"other" : "1000 tents and 320 food packages"
+ 	},
+ 	"CZE": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "791,378",
+ 		"personnel" : "36 medical workers and 13 firefighters"
+ 	},
+ 	"MYS": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "20 doctors, 30 person rescue-team"
+ 	},
+ 	"SVN": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : "55,000"
+ 	},
+ 	"PAK": {
+ 		"fillKey" : "AID",
+ 		"personnel" : ">60 medical personnel",
+ 		"other" : "setup a >30 bed hospital"
+ 	},
+ 	"SVK": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">33,000"
+ 	},
+ 	"LKA": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "44 rescuers and >156 other personnel"
+    },
+ 	"DNK": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">744,000"
+ 	},
+ 	"SGP": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : ">100,000",
+ 		"personnel" : ">55 personnel from the Civil Defence Force"
+ 	},
+ 	"AZE": {
+ 		"fillKey" : "AID",
+ 		"other" : "1 ton of medical and relief supplies"
+ 	},
+ 	"NZL": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : ">771,000",
+ 		"personnel" : ">45 urban search and rescue technicians"
+ 	},
+ 	"BEL": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "1 Million",
+ 		"personnel" : "Search and rescue teams"
+ 	},
+ 	"THA": {
+ 		"fillKey" : "BOTH",
+ 		"monetary" : "502,000",
+ 		"personnel" : "Medics and rescue staff"
+ 	},
+ 	"FRA": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "reinforcement team"
+ 	},
+ 	"VAT": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">100,000",
+ 		"other" : "a special prayer from the pope"
+ 	},
+ 	"POL": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "81 firefighters, 6 doctors and 12 search and rescue",
+ 		"other" : "rescue dogs as well"
+ 	},
+ 	"ZAF": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "search and rescue teams",
+ 		"other" : "with rescue dogs"
+ 	},
+ 	"PHL": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "soldiers and red cross staff"
+ 	},
+ 	"GRC": {
+ 		"fillKey" : "AID",
+ 		"personnel" : "search and rescue teams"
+ 	},
+ 	"TWN": {
+ 		"fillKey" : "MONEY",
+ 		"monetary" : ">300,000"
  	}
 }

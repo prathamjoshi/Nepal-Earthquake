@@ -37,7 +37,7 @@ var world_map = new Datamap({
 		                    	return [message].join('');
 		                    } else {
 		                    	var message = "<div class=\"hoverinfo\"><strong>" + geo.properties.name + "</strong>"
-		                    	message += "<br> <b>Aid</b>: <i>data not available</i>";
+		                    	message += "<br><i>data not available</i>";
 		                    	message += "</div>";
 		                    	return [message].join('');
 		                    }
