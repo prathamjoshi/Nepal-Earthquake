@@ -78,6 +78,11 @@ d3.json("data/nepal.json", function(error, npl) {
           .attr("d", path)
           .attr("class", "district-boundary");
 
+      var color = d3.scale.linear()
+        .domain([3, 5.5, 8])
+        .range(["white", "yellow",  "red"]);
+
+
       d3.csv("data/aftershocks.csv", function(aftershocks) {
           return {
               long: aftershocks.longitude,
@@ -92,7 +97,7 @@ d3.json("data/nepal.json", function(error, npl) {
               .append("circle")
                       .attr('class','mark')
                       .attr("r", function(d) {return d.magnitude*1.2})
-                      .attr("fill", "pink")
+                      .attr("fill", function(d) {return color(d.magnitude)})
                       .attr("stroke", "black")
               .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";})
               .append('svg:title')
