@@ -76,7 +76,7 @@ li:before {
 }
 
 #world-map-wrapper {
-  border: 1px solid green;
+  border: 1px solid turquoise;
 }
 
 #world-map {
@@ -117,3 +117,14 @@ li:before {
   color: #f79125;
 }
 
+#comparison-charts-wrapper {
+    margin: auto;
+    padding: 10px;
+}
+#comparison-chart {
+    display: inline-block;
+    padding-left: 50px;
+}
+#comparison-chart2 {
+    display: inline-block;
+}
