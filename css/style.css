@@ -84,7 +84,7 @@ li:before {
   margin-right: auto;
 }
 
-#world-map-title {
+#world-map-title, #comparison-title {
   text-align: center;
 }
 

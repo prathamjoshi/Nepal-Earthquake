@@ -1,8 +1,9 @@
 
 {"USA": {
-		"fillKey" : "MONEY",
-		"monetary": "20",
-		"personnel": "2"
+		"fillKey" : "BOTH",
+		"monetary": "10 Million",
+		"personnel": "100 Marines from LA Urban Search and Rescue, Disaster Response Team",
+		"other": "Two helicopters and four V-22 aircraft"
 	},
  "IND": {
  		"fillKey" : "AID",
