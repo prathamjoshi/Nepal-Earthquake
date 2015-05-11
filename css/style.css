@@ -3,6 +3,11 @@ h2 {
   color: teal;  
 }
 
+#slider1 {
+  width: 200px;
+  float: left;
+}
+
 rect {
   fill: none;
   pointer-events: all;
@@ -48,10 +53,23 @@ rect {
     font-weight: 500;
     color: #333;
     text-align: justify;
-    height: 100px;
+    height: 200px;
 
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+#news_date {
+  color: darkgreen;
+}
+
+
+.news_heading {
+  color: darkred;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 ul {
@@ -74,13 +92,13 @@ p {
   text-indent: 30px;
 }
 
-#intro, #news_description {
-  font-size: 13px;
+.intro, #news_description {
+  font-size: 15px;
   color: #2D5781;
 }
 
 #intro {
-  padding-top: 20px;
+  padding-top: 20px;  
 }
 
 #world-map-wrapper {
