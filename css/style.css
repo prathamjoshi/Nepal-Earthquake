@@ -70,9 +70,17 @@ li:before {
   color: #2D5781;
 }
 
-#intro {
-  font-style: italic;
+p {
   text-indent: 30px;
+}
+
+#intro, #news_description {
+  font-size: 13px;
+  color: #2D5781;
+}
+
+#intro {
+  padding-top: 20px;
 }
 
 #world-map-wrapper {

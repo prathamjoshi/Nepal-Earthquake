@@ -12,6 +12,7 @@ var news = (function () {
     return json;
 })(); 
 
+$("#news_date").html("Date: " + news[1].date);
 $("#news_top").html(news[1].news);
 
 //Slider stuff
@@ -27,6 +28,7 @@ d3.select('#slider1').on("mouseover", function() {
   if (current_slider_value != last_slider_value) {
     last_slider_value = current_slider_value; 
     $("#news_top").html(news[current_slider_value].news);
+    $("#news_date").html("Date: " + news[current_slider_value].date)
   }
 });
 //End Slider stuff
